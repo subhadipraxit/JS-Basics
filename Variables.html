@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Variables</title>
+       
+        <script type="text/javascript">
+         // statements under script tags 
+             document.write("<h1>Variables</h1>")
+
+             // JS is LOOSELY / STRICTLY typed as we don't need to specify datatype
+              // JS is DYNAMICLLY typed as  datatype of variables changes on what value we passed
+            var num=16;  //Number
+            var str = "String" // String
+            var flag = true; //Boolean
+            num=15;
+
+            document.write(typeof num , " is the datatype of: " ,num);
+            document.write("\n");  // not working here 
+            document.write("<br>"); // working
+            document.write(typeof str , " is the datatype of: " ,str);
+            document.write("<br>");
+            document.write(typeof flag , " is the datatype of: " ,flag);
+         
+         num = "Click OK to view the page" // example of dynamically typed
+        //  alert(num);  // example of alert
+        </script>
+    </head>  
+        <body>
+            <div id="x"></div>
+        </body>
+</html>
+<script  type="text/javascript">   
+    var img = document.createElement("img");
+    img.src = "pic/ss1.jpg","pic/ss2.jpg";
+    var src = document.getElementById("x");
+    src.appendChild(img);
+</script>
